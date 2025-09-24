@@ -35,22 +35,9 @@
    SVD Bugs Caught by LIDAR
   </h1>
 <table>
-<tr>
-<th>
-     SVD File
-    </th>
-<th>
-     Bug Description
-    </th>
-<th>
-     PR
-    </th>
-<th>
-     Status
-    </th>
-</tr>
-<tr><td>stm32f100</td> <td>FSMC_BCR1: reset value: svd = 0x30D0, agent = 0x30DB</td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1269">link</a></td> <td>Open</td></tr>
-<tr><td>stm32f100</td> <td>FSMC_BCR2: reset value: svd = 0x30D0, agent = 0x30D2</td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1269">link</a></td> <td>Open</td></tr>
+<tr><th>Bug ID</th> <th>SVD File</th> <th>Bug Description</th> <th>PR</th> <th>Status</th></tr>
+<tr><td>1</td> <td>stm32f100</td> <td>FSMC_BCR1: reset value: svd = 0x30D0, agent = 0x30DB</td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1269">link</a></td> <td>Open</td></tr>
+<tr><td>2</td> <td>stm32f100</td> <td>FSMC_BCR2: reset value: svd = 0x30D0, agent = 0x30D2</td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1269">link</a></td> <td>Open</td></tr>
 </table>
 </body>
 </html>

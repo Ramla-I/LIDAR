@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 # --- CONFIG ---
 HTML_PATH = os.path.join('docs', 'index.html')
 BACKUP_PATH = os.path.join('docs', 'index.html.bak')
-TABLE_HEADERS = ['SVD File', 'Bug Description', 'PR', 'Status']
+TABLE_HEADERS = ['Bug ID', 'SVD File', 'Bug Description', 'PR', 'Status']
 CSV_COLUMNS = ['SVD File', 'Bug Description', 'PR', 'Status']
 
 
@@ -28,11 +28,11 @@ def main(csv_path):
     with open(HTML_PATH, encoding='utf-8') as f:
         soup = BeautifulSoup(f, 'html.parser')
 
-    # Find the table with the correct headers
+    # Find the table with the correct headers (ignore Bug ID for matching)
     table = None
     for t in soup.find_all('table'):
         headers = [th.get_text(strip=True) for th in t.find_all('th')]
-        if headers == TABLE_HEADERS:
+        if headers[1:] == TABLE_HEADERS[1:]:
             table = t
             break
     if not table:
@@ -50,14 +50,16 @@ def main(csv_path):
 
     # Build the new table HTML as a string
     indent = '      '
-    table_html = '\n' + indent + str(header_tr) + '\n'
-    for row in rows:
+    # New header row with Bug ID
+    header_html = '<tr><th>Bug ID</th> <th>SVD File</th> <th>Bug Description</th> <th>PR</th> <th>Status</th></tr>'
+    table_html = '\n' + indent + header_html + '\n'
+    for idx, row in enumerate(rows, 1):
         pr_url = row[2].strip()
         if pr_url:
             pr_cell = f'<a href="{pr_url}">link</a>'
         else:
             pr_cell = ''
-        row_html = f'<tr><td>{row[0]}</td> <td>{row[1]}</td> <td>{pr_cell}</td> <td>{row[3]}</td></tr>'
+        row_html = f'<tr><td>{idx}</td> <td>{row[0]}</td> <td>{row[1]}</td> <td>{pr_cell}</td> <td>{row[3]}</td></tr>'
         table_html += row_html + '\n'
 
     # Replace the table's contents (preserve <table> tag and attributes)
@@ -68,7 +70,7 @@ def main(csv_path):
     with open(HTML_PATH, 'w', encoding='utf-8') as f:
         f.write(str(soup))
 
-    print(f"Replaced {len(rows)} rows in the table.")
+    print(f"Replaced {len(rows)} rows in the table, with Bug ID column added.")
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
