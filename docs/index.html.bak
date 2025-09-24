@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>
+   bug_tracking
+  </title>
+<style>
+   body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    h1 {
+      text-align: center;
+    }
+    table {
+      border-collapse: collapse;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+<h1>
+   SVD Bugs Caught by LIDAR
+  </h1>
+<table>
+<tr>
+<th>
+     SVD File
+    </th>
+<th>
+     Bug Description
+    </th>
+<th>
+     PR
+    </th>
+<th>
+     Status
+    </th>
+</tr>
+<tr><td>stm32f100</td> <td>FSMC_BCR1: reset value: svd = 0x30D0, agent = 0x30DB</td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1269">link</a></td> <td>Open</td></tr>
+<tr><td>stm32f100</td> <td>FSMC_BCR2: reset value: svd = 0x30D0, agent = 0x30D2</td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1269">link</a></td> <td>Open</td></tr>
+</table>
+</body>
+</html>

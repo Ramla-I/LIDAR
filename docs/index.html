@@ -1,16 +1,24 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>bug_tracking</title>
-  <style>
-    body {
+<meta charset="utf-8"/>
+<title>
+   bug_tracking
+  </title>
+<style>
+   body {
       font-family: Arial, sans-serif;
       margin: 40px;
+    }
+    h1 {
+      text-align: center;
     }
     table {
       border-collapse: collapse;
       width: 60%;
+      margin-left: auto;
+      margin-right: auto;
     }
     th, td {
       border: 1px solid #333;
@@ -23,32 +31,115 @@
   </style>
 </head>
 <body>
-  <h1>SVD Bugs Caught by LIDAR</h1>
-  <table>
-    <tr>
-      <th>SVD File</th>
-      <th>Bug Description</th>
-      <th>PR</th>
-      <th>Status</th>
-    </tr>
-    <tr>
-      <td>x</td>
-      <td>x</td>
-      <td>x</td>
-      <td>x</td>
-    </tr>
-    <tr>
-      <td>x</td>
-      <td>x</td>
-      <td>x</td>
-      <td>x</td>
-    </tr>
-    <tr>
-      <td>x</td>
-      <td>x</td>
-      <td>x</td>
-      <td>x</td>
-    </tr>
-  </table>
+<h1>
+   SVD Bugs Caught by LIDAR
+  </h1>
+<table>
+<tr>
+<th>
+     SVD File
+    </th>
+<th>
+     Bug Description
+    </th>
+<th>
+     PR
+    </th>
+<th>
+     Status
+    </th>
+</tr>
+<tr><td>stm32f100</td> <td>FSMC_BCR1: reset value: svd = 0x30D0, agent = 0x30DB</td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1269">link</a></td> <td>Open</td></tr>
+<tr><td>stm32f100</td> <td>FSMC_BCR2: reset value: svd = 0x30D0, agent = 0x30D2</td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1269">link</a></td> <td>Open</td></tr>
+<tr><td>stm32f100</td> <td>FSMC_BCR3: reset value: svd = 0x30D0, agent = 0x30D2</td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1269">link</a></td> <td>Open</td></tr>
+<tr><td>stm32f100</td> <td>FSMC_BCR4: reset value: svd = 0x30D0, agent = 0x30D2</td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1269">link</a></td> <td>Open</td></tr>
+<tr><td>stm32f100</td> <td>FSMC_BTR1: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1269">link</a></td> <td>Open</td></tr>
+<tr><td>stm32f100</td> <td>FSMC_BTR2: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1269">link</a></td> <td>Open</td></tr>
+<tr><td>stm32f100</td> <td>FSMC_BTR3: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1269">link</a></td> <td>Open</td></tr>
+<tr><td>stm32f100</td> <td>FSMC_BTR4: reset value: svd = 0xFFFF_FFFF, RM= 0x0FFF_FFFF</td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1269">link</a></td> <td>Open</td></tr>
+<tr><td>stm32f100</td> <td>TIM1_ARR: reset value: svd = 0x0, agent = 0xFFFF</td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1269">link</a></td> <td>Open</td></tr>
+<tr><td>stm32f100</td> <td>TIM2_ARR: reset value: svd = 0x0, agent = 0xFFFF</td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1269">link</a></td> <td>Open</td></tr>
+<tr><td>stm32f100</td> <td>TIM6_ARR: reset value: svd = 0x0, agent = 0xFFFF</td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1269">link</a></td> <td>Open</td></tr>
+<tr><td>stm32f100</td> <td>TIM12_ARR: reset value: svd = 0x0, agent = 0xFFFF</td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1264">link</a></td> <td>Merged</td></tr>
+<tr><td>stm32f100</td> <td>TIM13_ARR: reset value: svd = 0x0, agent = 0xFFFF</td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1269">link</a></td> <td>Open</td></tr>
+<tr><td>stm32f100</td> <td>USART1_DR: reset value: svd = 0x0, agent = 0xXXXX_XXXX</td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1269">link</a></td> <td>Open</td></tr>
+<tr><td>stm32f405</td> <td>TIM6_ARR: reset value: svd = 0x0, agent = 0xFFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f405</td> <td>FSMC_BCR1: reset value: svd = 0x30D0, agent = 0x30DB</td> <td></td> <td></td></tr>
+<tr><td>stm32f405</td> <td>FSMC_BCR2: reset value: svd = 0x30D0, RM = 0x30D2</td> <td></td> <td></td></tr>
+<tr><td>stm32f405</td> <td>FSMC_BCR3: reset value: svd = 0x30D0, RM = 0x30D2</td> <td></td> <td></td></tr>
+<tr><td>stm32f405</td> <td>FSMC_BCR4: reset value: svd = 0x30D0, RM = 0x30D2</td> <td></td> <td></td></tr>
+<tr><td>stm32f405</td> <td>FSMC_BTR1: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f405</td> <td>FSMC_BTR2: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f405</td> <td>FSMC_BTR3: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f405</td> <td>FSMC_BTR4: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f407</td> <td>TIM6_ARR: reset value: svd = 0x0, agent = 0xFFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f407</td> <td>FSMC_BCR1: reset value: svd = 0x30D0, agent = 0x30DB</td> <td></td> <td></td></tr>
+<tr><td>stm32f407</td> <td>FSMC_BCR2: reset value: svd = 0x30D0, RM = 0x30D2</td> <td></td> <td></td></tr>
+<tr><td>stm32f407</td> <td>FSMC_BCR3: reset value: svd = 0x30D0, RM = 0x30D2</td> <td></td> <td></td></tr>
+<tr><td>stm32f407</td> <td>FSMC_BCR4: reset value: svd = 0x30D0, RM = 0x30D2</td> <td></td> <td></td></tr>
+<tr><td>stm32f407</td> <td>FSMC_BTR1: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f407</td> <td>FSMC_BTR2: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f407</td> <td>FSMC_BTR3: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f407</td> <td>FSMC_BTR4: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f415</td> <td>TIM6_ARR: reset value: svd = 0x0, agent = 0xFFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f415</td> <td>FSMC_BCR1: reset value: svd = 0x30D0, agent = 0x30DB</td> <td></td> <td></td></tr>
+<tr><td>stm32f415</td> <td>FSMC_BCR2: reset value: svd = 0x30D0, RM = 0x30D2</td> <td></td> <td></td></tr>
+<tr><td>stm32f415</td> <td>FSMC_BCR3: reset value: svd = 0x30D0, RM = 0x30D2</td> <td></td> <td></td></tr>
+<tr><td>stm32f415</td> <td>FSMC_BCR4: reset value: svd = 0x30D0, RM = 0x30D2</td> <td></td> <td></td></tr>
+<tr><td>stm32f415</td> <td>FSMC_BTR1: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f415</td> <td>FSMC_BTR2: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f415</td> <td>FSMC_BTR3: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f415</td> <td>FSMC_BTR4: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f417</td> <td>TIM6_ARR: reset value: svd = 0x0, agent = 0xFFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f417</td> <td>FSMC_BCR1: reset value: svd = 0x30D0, agent = 0x30DB</td> <td></td> <td></td></tr>
+<tr><td>stm32f417</td> <td>FSMC_BCR2: reset value: svd = 0x30D0, RM = 0x30D2</td> <td></td> <td></td></tr>
+<tr><td>stm32f417</td> <td>FSMC_BCR3: reset value: svd = 0x30D0, RM = 0x30D2</td> <td></td> <td></td></tr>
+<tr><td>stm32f417</td> <td>FSMC_BCR4: reset value: svd = 0x30D0, RM = 0x30D2</td> <td></td> <td></td></tr>
+<tr><td>stm32f417</td> <td>FSMC_BTR1: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f417</td> <td>FSMC_BTR2: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f417</td> <td>FSMC_BTR3: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f417</td> <td>FSMC_BTR4: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f427</td> <td>TIM6_ARR: reset value: svd = 0x0, agent = 0xFFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f427</td> <td>FMC_BCR1: reset value: svd = 0x30D0, agent = 0x30DB</td> <td></td> <td></td></tr>
+<tr><td>stm32f427</td> <td>FMC_BCR2: reset value: svd = 0x30D0, RM = 0x30D2</td> <td></td> <td></td></tr>
+<tr><td>stm32f427</td> <td>FMC_BCR3: reset value: svd = 0x30D0, RM = 0x30D2</td> <td></td> <td></td></tr>
+<tr><td>stm32f427</td> <td>FMC_BCR4: reset value: svd = 0x30D0, RM = 0x30D2</td> <td></td> <td></td></tr>
+<tr><td>stm32f427</td> <td>FMC_BTR1: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f427</td> <td>FMC_BTR2: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f427</td> <td>FMC_BTR3: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f427</td> <td>FMC_BTR4: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f429</td> <td>TIM6_ARR: reset value: svd = 0x0, agent = 0xFFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f429</td> <td>FMC_BCR1: reset value: svd = 0x30D0, agent = 0x30DB</td> <td></td> <td></td></tr>
+<tr><td>stm32f429</td> <td>FMC_BCR2: reset value: svd = 0x30D0, RM = 0x30D2</td> <td></td> <td></td></tr>
+<tr><td>stm32f429</td> <td>FMC_BCR3: reset value: svd = 0x30D0, RM = 0x30D2</td> <td></td> <td></td></tr>
+<tr><td>stm32f429</td> <td>FMC_BCR4: reset value: svd = 0x30D0, RM = 0x30D2</td> <td></td> <td></td></tr>
+<tr><td>stm32f429</td> <td>FMC_BTR1: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f429</td> <td>FMC_BTR2: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f429</td> <td>FMC_BTR3: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f429</td> <td>FMC_BTR4: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f437</td> <td>TIM6_ARR: reset value: svd = 0x0, agent = 0xFFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f437</td> <td>FMC_BCR1: reset value: svd = 0x30D0, agent = 0x30DB</td> <td></td> <td></td></tr>
+<tr><td>stm32f437</td> <td>FMC_BCR2: reset value: svd = 0x30D0, RM = 0x30D2</td> <td></td> <td></td></tr>
+<tr><td>stm32f437</td> <td>FMC_BCR3: reset value: svd = 0x30D0, RM = 0x30D2</td> <td></td> <td></td></tr>
+<tr><td>stm32f437</td> <td>FMC_BCR4: reset value: svd = 0x30D0, RM = 0x30D2</td> <td></td> <td></td></tr>
+<tr><td>stm32f437</td> <td>FMC_BTR1: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f437</td> <td>FMC_BTR2: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f437</td> <td>FMC_BTR3: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f437</td> <td>FMC_BTR4: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f439</td> <td>TIM6_ARR: reset value: svd = 0x0, agent = 0xFFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f439</td> <td>FMC_BCR1: reset value: svd = 0x30D0, agent = 0x30DB</td> <td></td> <td></td></tr>
+<tr><td>stm32f439</td> <td>FMC_BCR2: reset value: svd = 0x30D0, RM = 0x30D2</td> <td></td> <td></td></tr>
+<tr><td>stm32f439</td> <td>FMC_BCR3: reset value: svd = 0x30D0, RM = 0x30D2</td> <td></td> <td></td></tr>
+<tr><td>stm32f439</td> <td>FMC_BCR4: reset value: svd = 0x30D0, RM = 0x30D2</td> <td></td> <td></td></tr>
+<tr><td>stm32f439</td> <td>FMC_BTR1: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f439</td> <td>FMC_BTR2: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f439</td> <td>FMC_BTR3: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f439</td> <td>FMC_BTR4: reset value: svd = 0xFFFF_FFFF, RM = 0x0FFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f0x1</td> <td>CRC_INIT: address offset: svd = 0xC, agent = 0x10</td> <td></td> <td></td></tr>
+<tr><td>stm32f0x1</td> <td>Flash_ACR: reset value: svd = 0x30, agent = 0x0</td> <td></td> <td></td></tr>
+<tr><td>stm32f0x1</td> <td>TIM2_ARR: reset value: svd = 0x0, agent = 0xFFFF_FFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f0x1</td> <td>TIM6_ARR: reset value: svd = 0x0, agent = 0xFFFF</td> <td></td> <td></td></tr>
+<tr><td>stm32f0x1</td> <td>CEC_CFGR_LSTNL: bit range: svd = (4,4), agent = (31,31)</td> <td></td> <td></td></tr>
+</table>
 </body>
 </html>
