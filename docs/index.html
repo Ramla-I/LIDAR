@@ -80,18 +80,26 @@
 <tr><td>42</td> <td>stm32f0x1, stm32f0x2, stm32f0x8</td> <td>tim14_arr: reset_value: svd = 0x0, agent = 0xFFFFFFFF, RM = 0xFFFF</td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1274">link</a></td> <td>Merged</td></tr>
 <tr><td>43</td> <td>stm32f0x1, stm32f0x2, stm32f0x8</td> <td>tim15_arr: reset_value: svd = 0x0, agent = 0xFFFF, RM =</td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1274">link</a></td> <td>Merged</td></tr>
 <tr><td>44</td> <td>stm32f0x1, stm32f0x2, stm32f0x8</td> <td>tim16_arr: reset_value: svd = 0x0, agent = 0xFFFF, RM =</td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1274">link</a></td> <td>Merged</td></tr>
-<tr><td>45</td> <td>stm32f0x0</td> <td>adc_cfgr2: reset_value: svd = 0x8000, agent = 0x0, RM = </td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1277">link</a></td> <td></td></tr>
-<tr><td>46</td> <td>stm32f0x0</td> <td>adc_tr: reset_value: svd = 0xFFF, agent = 0xFFF0000, RM = </td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1277">link</a></td> <td></td></tr>
-<tr><td>47</td> <td>stm32f0x0</td> <td>flash_obr: reset_value: svd = 0x3FFFFF2, agent = 0xXXXXXX0X, RM = 0xXXXX XX0X</td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1277">link</a></td> <td></td></tr>
-<tr><td>48</td> <td>stm32f0x0</td> <td>rcc_bdcr: reset_value: svd = 0x0, agent = 0x18, RM = </td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1277">link</a></td> <td></td></tr>
-<tr><td>49</td> <td>stm32f0x0</td> <td>spi1_cr2: reset_value: svd = 0x0, agent = 0x700, RM = </td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1277">link</a></td> <td></td></tr>
-<tr><td>50</td> <td>stm32f0x0</td> <td>tim1_arr: reset_value: svd = 0x0, agent = 0xFFFF, RM = </td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1277">link</a></td> <td></td></tr>
-<tr><td>51</td> <td>stm32f0x0</td> <td>tim3_arr: reset_value: svd = 0x0, agent = 0xFFFFFFFF, RM = </td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1277">link</a></td> <td></td></tr>
-<tr><td>52</td> <td>stm32f0x0</td> <td>tim6_arr: reset_value: svd = 0x0, agent = 0xFFFF, RM = </td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1277">link</a></td> <td></td></tr>
-<tr><td>53</td> <td>stm32f0x0</td> <td>tim14_arr: reset_value: svd = 0x0, agent = 0xFFFF, RM = </td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1277">link</a></td> <td></td></tr>
-<tr><td>54</td> <td>stm32f0x0</td> <td>tim15_arr: reset_value: svd = 0x0, agent = 0xFFFF, RM = </td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1277">link</a></td> <td></td></tr>
-<tr><td>55</td> <td>stm32f0x0</td> <td>tim16_arr: reset_value: svd = 0x0, agent = 0xFFFF, RM = </td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1277">link</a></td> <td></td></tr>
-<tr><td>56</td> <td>stm32f0x0</td> <td>crc_init: address_offset: svd = 0xC, agent = 0x10, RM = </td> <td></td> <td>patched</td></tr>
+<tr><td>45</td> <td>stm32f0x1, stm32f0x2, stm32f0x8</td> <td>cec_cfgr_brestp: bit_offset: svd = 9, agent = 4</td> <td></td> <td>Patched</td></tr>
+<tr><td>46</td> <td>stm32f0x1, stm32f0x2, stm32f0x8</td> <td>cec_cfgr_rxtol: bit_offset: svd = 8, agent = 3</td> <td></td> <td>Patched</td></tr>
+<tr><td>47</td> <td>stm32f0x1, stm32f0x2, stm32f0x8</td> <td>cec_cfgr_lstn: bit_offset: svd = 4, agent = 31 </td> <td></td> <td>Patched</td></tr>
+<tr><td>48</td> <td>stm32f0x1, stm32f0x2, stm32f0x8</td> <td>cec_cfgr_bregen: bit_offset: svd = 10, agent = 5</td> <td></td> <td>Patched</td></tr>
+<tr><td>49</td> <td>stm32f0x1, stm32f0x2, stm32f0x8</td> <td>cec_cfgr_lbpegen: bit_offset: svd = 11, agent = 6</td> <td></td> <td>Patched</td></tr>
+<tr><td>50</td> <td>stm32f0x1, stm32f0x2, stm32f0x8</td> <td>rcc_cr2_hsi48cal: bit_width: svd = 1, agent = 8</td> <td></td> <td>Patched</td></tr>
+<tr><td>51</td> <td>stm32f0x1</td> <td>flash_obr_ram_parity_check: bit_width: svd = 0, agent = 1</td> <td></td> <td>Patched</td></tr>
+<tr><td>52</td> <td>stm32f0x1, stm32f0x2, stm32f0x8</td> <td>crc_init: address_offset: svd = 0xC, agent = 0x10</td> <td></td> <td>Patched</td></tr>
+<tr><td>53</td> <td>stm32f0x0</td> <td>adc_cfgr2: reset_value: svd = 0x8000, agent = 0x0, RM = </td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1277">link</a></td> <td>Merged</td></tr>
+<tr><td>54</td> <td>stm32f0x0</td> <td>adc_tr: reset_value: svd = 0xFFF, agent = 0xFFF0000, RM = </td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1277">link</a></td> <td>Merged</td></tr>
+<tr><td>55</td> <td>stm32f0x0</td> <td>flash_obr: reset_value: svd = 0x3FFFFF2, agent = 0xXXXXXX0X, RM = 0xXXXX XX0X</td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1277">link</a></td> <td>Merged</td></tr>
+<tr><td>56</td> <td>stm32f0x0</td> <td>rcc_bdcr: reset_value: svd = 0x0, agent = 0x18, RM = </td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1277">link</a></td> <td>Merged</td></tr>
+<tr><td>57</td> <td>stm32f0x0</td> <td>spi1_cr2: reset_value: svd = 0x0, agent = 0x700, RM = </td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1277">link</a></td> <td>Merged</td></tr>
+<tr><td>58</td> <td>stm32f0x0</td> <td>tim1_arr: reset_value: svd = 0x0, agent = 0xFFFF, RM = </td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1277">link</a></td> <td>Merged</td></tr>
+<tr><td>59</td> <td>stm32f0x0</td> <td>tim3_arr: reset_value: svd = 0x0, agent = 0xFFFFFFFF, RM = </td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1277">link</a></td> <td>Merged</td></tr>
+<tr><td>60</td> <td>stm32f0x0</td> <td>tim6_arr: reset_value: svd = 0x0, agent = 0xFFFF, RM = </td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1277">link</a></td> <td>Merged</td></tr>
+<tr><td>61</td> <td>stm32f0x0</td> <td>tim14_arr: reset_value: svd = 0x0, agent = 0xFFFF, RM = </td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1277">link</a></td> <td>Merged</td></tr>
+<tr><td>62</td> <td>stm32f0x0</td> <td>tim15_arr: reset_value: svd = 0x0, agent = 0xFFFF, RM = </td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1277">link</a></td> <td>Merged</td></tr>
+<tr><td>63</td> <td>stm32f0x0</td> <td>tim16_arr: reset_value: svd = 0x0, agent = 0xFFFF, RM = </td> <td><a href="https://github.com/stm32-rs/stm32-rs/pull/1277">link</a></td> <td>Merged</td></tr>
+<tr><td>64</td> <td>stm32f0x0</td> <td>crc_init: address_offset: svd = 0xC, agent = 0x10, RM = </td> <td></td> <td>Patched</td></tr>
 </table>
 </body>
 </html>
